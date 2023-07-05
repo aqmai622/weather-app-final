@@ -57,15 +57,18 @@ function handleSubmit (event) {
 }
 
 function displayFahrenheitTemperature (event) {
- event.preventDefault();
-  let fahrenheitTemperature = (24 * 9) / 5 + 32;
- alert(fahrenheitTemperature);
+     event.preventDefault();
+     let fahrenheitTemperature = (24 * 9) / 5 + 32;
+     let temperatureElement = document.querySelector("temperture");
+     temperatureElement.innerHTML = fahrenheitTemperature;
 }
 
 search("New York");
 
-let form = document.querySelector("#searh-form");
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("fahrenheit-link");
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+
