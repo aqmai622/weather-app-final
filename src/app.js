@@ -51,24 +51,20 @@ axios.get(apiUrl).then(displayTemperature);
 
 
 function handleSubmit (event) {
-    event.preventDefault();
+    event.preventDefault ();
    let cityInputElement = document.querySelector("#city-input");
    search(cityInputElement.value);
 }
 
 function displayFahrenheitTemperature (event) {
-     event.preventDefault();
-     let fahrenheitTemperature = (24 * 9) / 5 + 32;
-     let temperatureElement = document.querySelector("temperture");
-     temperatureElement.innerHTML = fahrenheitTemperature;
+    event.preventDefault();
+    alert("Link clicked");
 }
 
 search("New York");
 
-let form = document.querySelector("#search-form");
+let form = document.querySelector("#searh-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-
