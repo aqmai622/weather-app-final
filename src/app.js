@@ -37,8 +37,8 @@ function displayForecast(response) {
       `
             <div class="col-2">
                 <div class = "weather-forecast-date">
-                ${forecastDay.time} </div>
-                <img src="http://openweathermap.org/img/wn/${forecastDay.condition[0].icon}@2x.png" 
+                ${forecastDay.time * 1000} </div>
+               <img src="${forecastDay.condition.icon_url}"  
                 alt=""  
                 width="42"
                 />
