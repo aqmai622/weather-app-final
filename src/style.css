@@ -25,11 +25,17 @@ h1 {
   width: 350px;
   border: 1px solid #dadde1;
   position: fixed;
+  display: block;
+   margin: 0 auto;
+   max-width: 100%;
 }
 
 button {
   background-color: #F4DFAC;
    position: fixed;
+   display: block;
+   margin: 0 auto;
+   max-width: 100%;
 }
 
 ul {
