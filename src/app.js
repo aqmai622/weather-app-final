@@ -119,8 +119,6 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("London");
+search("New York");
 
-setTimeout(function () {
-  document.getElementById("gradient-background").style.animation = "none";
-}, 5000);
+
