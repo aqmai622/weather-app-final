@@ -1,5 +1,16 @@
 body {
   font-family: arial, sans-serif;
+  background: linear-gradient(to bottom right,
+ 
+  #A084DC, 
+  #CB89CF, 
+  #F59DB9, 
+  #F4A8AF, 
+  #F4B59E, 
+  #F4C197,
+  #EFC786 
+  
+  );
 }
 
 h1 {
