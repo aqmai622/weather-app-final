@@ -120,3 +120,7 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 search("London");
+
+setTimeout(function () {
+  document.getElementById("gradient-background").style.animation = "none";
+}, 5000);
